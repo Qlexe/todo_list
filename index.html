@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>ToDo List</title>
+    <link href="https://unpkg.com/@csstools/normalize.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="shortcut icon"
+        href="https://thumb1.shutterstock.com/mosaic_250/169597876/562785970/stock-vector-vector-illustration-with-tick-icon-562785970.jpg"
+        type="image/x-icon">
+
+</head>
+
+<body>
+    <div hidden>
+        <div class="todo_task">
+            <button type="button" class="btn btn-success todo_check" aria-label="Check">
+                <img src="img/check-lg.svg" alt="Check task">
+            </button>
+            <button type="button" class="btn btn-danger todo_delete" aria-label="Delete">
+                <img src="img/x-lg.svg" alt="Delete task">
+            </button>
+            <p class="todo_text"></p>
+            <span class="todo_date-count todo_date"></span>
+        </div>
+    </div>
+        <div class="todo-app container">
+            <div class="todo_create">
+                <input type="text" id="task_input" class="form-control" placeholder="Task text">
+                <button id="task_add" class="btn btn-primary"><img src="img/plus-lg.svg" alt="Add task"></button>
+            </div>
+            <div id="task_list">
+            </div>
+            <p id="start_message">Active tasks list is emply</p>
+            <div class="todo_create">
+                <button id="show_not_completed" class="btn btn-primary">Show not completed</button>
+                <button id="show_all" class="btn btn-primary">Show all</button>
+                <button id="delete_all" class="btn btn-danger">Delete all</button>
+            </div>
+        </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
